@@ -17,48 +17,34 @@
 
     /*text style*/
 
-    .div1 {
-      max-width: 500px;
-      min-height: 100px;
-      padding: 50px;
-      color: 2px solid linen
-      text-align: center;
-      float: left;
-    }
+    /*Text Box style*/
 
-    .div2 {
-      max-width: 500px;
-      min-height: 100px;
-      padding: 50px;
-      color: 2px solid linen
-      text-align: center;
-      float: center;
-    }
-
-     .div3 {
-      max-width: 2000px;
-      min-height: 100px;
+   .container { 
+     display:flex;
+              }
      
-      color: 2px solid linen
-      text-align: center;
-      background: darkslategray;
-      float: center;
-            }
+    .container div{ 
+    boarder: 1px #ccc solid;
+    padding: 10px;
+              }
     
-    #container /*Text Box style*/
-  {width:900px;
-   margin:0 auto;
-  }
-
-    .col1, .col2, .col3,
-  {width:280px;
-   float:left;
-   margin;10px;
-  }
+    .col1{
+  flex: 1;
+  order: 1;      
+         }
+    
+    .col2{
+  flex: 1;
+  order: 2;      
+         }
+    
+    .col3{
+  flex: 1;
+  order: 3;      
+         }
 
     /*Text Box style*/
 
-    /*Image galery*/
 
     /* Style icons */
     .fa {
@@ -95,34 +81,35 @@
     <br>
     <br>
     <h1>BLOG</h1>
-  <div id="container"><!-- column1 -->
-  <div class="col1">
+  
+  <div class="container"><!-- container -->
+  <div class="col1"><!-- column1 -->
       <h2>Find your Style</h2>
         <p>
         by Zsofia Sept.2022 <br>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
         </p>
       </div>             <!-- end of column 1 -->
     
-  <div id="container"><!-- column2 -->
-  <div class="col2">  
+  <div class="col2">     <!-- column2 -->
       <h2> Decorating Tipps</h2>  
       <p>
         by Zsofia Aug.2022 <br>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
       </p>
       </div>            <!-- end of column 2 -->
 
-  <div id="container">
-  <div class="col3"> <!-- column3 -->
+  <div class="col3">    <!-- column3 -->
       <h2>
         Room Makeover
       </h2> 
       <p>
         by Zsofia June.2022 <br>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
       </p>
-      </div>           <!-- end of column 3 -->       
+      </div>           <!-- end of column 3 -->
+  </div>  <!-- end container -->  
+  
     <div class="div2"> <!-- Box 2 -->
   <br>
   <br>
